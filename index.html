@@ -57,6 +57,24 @@
             opacity: 0.5;
         }
 
+        .forkMe {
+            background-color: #ffe200;
+            top: -100px;
+            right: -50px;
+            position: fixed;
+            color: rgb(0, 157, 255);
+            padding: 10px;
+            font-size: 16px;
+            width: 220px;
+            display: block;
+            box-sizing: border-box;
+            text-align: center;
+            z-index: 1;
+            transform: rotate(45deg) translate(100px, 100px);
+            text-decoration: none;
+            box-shadow: 0 1px 2px #0003;
+        }
+
         @media print {
             .topBar {
                 display: none;
@@ -73,6 +91,9 @@
 </head>
 
 <body>
+    <aside>
+        <a class="forkMe" href="https://github.com/verlok/lazyload-print-test/">GitHub Repo</a>
+    </aside>
     <div class="topBar">
         <button class="print">🖨️ ️Print</button>
     </div>
